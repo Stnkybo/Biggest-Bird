@@ -1,6 +1,7 @@
+import os
 import pygame
 import random
-
+os.chdir('Bird')
 pygame.init()
 
 # Screen dimensions
