@@ -6,7 +6,7 @@ pygame.init()
 
 # Screen dimensions
 SCREEN_WIDTH = 600
-SCREEN_HEIGHT = 800
+SCREEN_HEIGHT = 700
 
 # Colors
 WHITE = (255, 255, 255)
@@ -112,7 +112,7 @@ class Pipe:
             return True
 
 def draw_window(screen,bird,pipes,score):
-    screen.blit(bg_image,(0,-200))
+    screen.blit(bg_image,(0,0))
     for pipe in pipes:
       pipe.draw(screen)
     text=font.render("Score: "+str(score),1,(255,255,255))
